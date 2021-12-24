@@ -12,7 +12,7 @@ class HomePage extends Component {
   movieDetailsView;
   async componentDidMount() {
     const response = await axios.get(
-      `http://api.themoviedb.org/3/trending/movie/day?api_key=b40c1cf48e7be8057f0d1401f7256d69`,
+      `https://api.themoviedb.org/3/trending/movie/day?api_key=b40c1cf48e7be8057f0d1401f7256d69`,
     );
 
     this.setState({ movies: response.data.results });

@@ -18,7 +18,7 @@ function MovieDetailsView() {
 
   async function getMovie() {
     await axios
-      .get(`http://api.themoviedb.org/3/movie/${movieId}?api_key=b40c1cf48e7be8057f0d1401f7256d69`)
+      .get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=b40c1cf48e7be8057f0d1401f7256d69`)
       .then(res => {
         setDataMovie(res.data);
       });
@@ -40,7 +40,7 @@ function MovieDetailsView() {
 
   const imageUrl = `https://image.tmdb.org/t/p/w300${poster_path}`;
   const year = new Date(release_date).getFullYear();
-  const actorsUrl = `http://api.themoviedb.org/3/movie/${movieId}/credits?api_key=b40c1cf48e7be8057f0d1401f7256d69`;
+  const actorsUrl = `https://api.themoviedb.org/3/movie/${movieId}/credits?api_key=b40c1cf48e7be8057f0d1401f7256d69`;
 
   console.log(actorsUrl);
   return (

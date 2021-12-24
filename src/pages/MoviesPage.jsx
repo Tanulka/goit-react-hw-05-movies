@@ -14,7 +14,7 @@ function MoviesPage() {
 
   async function getFindMovie() {
     await axios
-      .get(`http://api.themoviedb.org/3/search/movie?api_key=b40c1cf48e7be8057f0d1401f7256d69&query=${searchQuery}`)
+      .get(`https://api.themoviedb.org/3/search/movie?api_key=b40c1cf48e7be8057f0d1401f7256d69&query=${searchQuery}`)
       .then(res => {
         setFindMovies(res.data.results);
         console.log(res.data.results);
