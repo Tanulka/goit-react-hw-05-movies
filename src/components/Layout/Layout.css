@@ -1,0 +1,12 @@
+.main-header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-header a.active {
+  color: #ffa500;
+}
+
+.homeLink {
+  margin-right: 20px;
+}
