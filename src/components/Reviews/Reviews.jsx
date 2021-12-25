@@ -10,7 +10,7 @@ function Reviews() {
 
   async function getReviews() {
     await axios
-      .get(`http://api.themoviedb.org/3/movie/${movieId}/reviews?api_key=b40c1cf48e7be8057f0d1401f7256d69`)
+      .get(`https://api.themoviedb.org/3/movie/${movieId}/reviews?api_key=b40c1cf48e7be8057f0d1401f7256d69`)
       .then(res => {
         setDataReviews(res.data.results);
       });
